@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Calculo Pendiente</title>
+</head>
+<body>
+    <header>
+        <h1>CALCULAR PENDIENTE</h1>
+    </header>
+
+    <div class="containerPadre">
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <legend>Ingreso de datos</legend>
+                    
+                    <div>
+                        <label for="x" class="charge">Medida de avance:</label>
+                        <input type="text" id="x" autocomplete="off" class="charge input-datos">
+                    </div>
+                    
+                    <div>
+                        <label for="y" class="charge">Medida de bajada:</label>
+                        <input type="text" id="y" autocomplete="off" class="charge input-datos">
+                    </div>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend class="second">Calculo de pendiente</legend>
+                    
+                    <div>
+                        <label for="xCalc" class="charge">Ingrese el eje X:</label>
+                        <input type="text" id="xCalc" autocomplete="off" class="charge input-datos">
+                    </div>
+                    
+                    <div>
+                        <label for="yCalc" class="charge ">Ingrese el eje Y:</label>
+                        <input type="text" id="yCalc" autocomplete="off" class="charge input-datos">
+                    </div>
+
+                </fieldset>
+                
+                <div class="btn">
+                    <div id="btn">Enviar</div>
+                </div>
+        
+            </form>
+        </div>
+
+        <div class="resultados" id="mostrar">
+            <h2>PENDIENTE</h2>
+            <p id="parrafo">Cada x metros debe bajar y metros</p>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
